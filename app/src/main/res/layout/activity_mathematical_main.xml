@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:homework="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <yc.com.homework.base.widget.MainToolBar
+        android:id="@+id/mainToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_f0f6fa"
+        android:orientation="vertical"
+        android:padding="@dimen/t15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <yc.com.homework.index.widget.BaseMathView
+                android:id="@+id/baseMathView_unit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/t15dp"
+                android:layout_weight="1"
+                homework:math_icon="@mipmap/unit_icon"
+                homework:math_name="@string/unit_conversion"
+                homework:math_tag="@string/unit" />
+
+            <yc.com.homework.index.widget.BaseMathView
+                android:id="@+id/baseMathView_graph"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                homework:math_icon="@mipmap/graph_icon"
+                homework:math_name="@string/graph_conversion"
+                homework:math_tag="图形" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t15dp">
+
+            <yc.com.homework.index.widget.BaseMathView
+                android:id="@+id/baseMathView_math_formula"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/t15dp"
+                android:layout_weight="1"
+                homework:math_icon="@mipmap/math_formula_icon"
+                homework:math_name="@string/math_formula"
+                homework:math_tag="等式" />
+
+            <yc.com.homework.index.widget.BaseMathView
+                android:id="@+id/baseMathView_olympiad_trees"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                homework:math_icon="@mipmap/olympiad_trees_icon"
+                homework:math_name="@string/olympiad_trees"
+                homework:math_tag="植树" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t15dp">
+
+            <yc.com.homework.index.widget.BaseMathView
+                android:id="@+id/baseMathView_law"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/t15dp"
+                android:layout_weight="1"
+                homework:math_icon="@mipmap/law_icon"
+                homework:math_name="@string/law"
+                homework:math_tag="数据" />
+
+            <yc.com.homework.index.widget.BaseMathView
+                android:id="@+id/baseMathView_graph_conversion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                homework:math_icon="@mipmap/other_icon"
+                homework:math_name="@string/other"
+                homework:math_show_extra="true"
+                homework:math_tag="@string/other" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

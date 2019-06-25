@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <yc.com.homework.base.widget.CommonToolBar
+        android:id="@+id/commonToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_f0f6fa"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/orange_ffe5d0"
+                android:gravity="center"
+                android:padding="@dimen/t15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="申请咨询请加微信："
+                    android:textColor="@color/orange_fa9f74" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pai201807"
+                    android:textColor="@color/orange_fa9f74" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/t8dp"
+                android:paddingStart="@dimen/t15dp"
+                android:paddingTop="@dimen/t8dp"
+                android:text="@string/person_details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/t18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/t8dp"
+                    android:paddingLeft="@dimen/t15dp"
+                    android:paddingTop="@dimen/t8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/t16sp" />
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/t10dp"
+                        android:layout_marginRight="@dimen/t10dp"
+                        android:background="@null"
+                        android:focusable="true"
+                        android:hint="@string/input_real_name"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="@color/gray_aaaaaa"
+                        android:textSize="@dimen/t14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/t1dp"
+                    android:background="@color/gray_f0f6fa" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/t8dp"
+                    android:paddingLeft="@dimen/t15dp"
+                    android:paddingTop="@dimen/t8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sex"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/t16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/t10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_male"
+                            style="@style/radio_button_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/man" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton_female"
+                            style="@style/radio_button_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/t50dp"
+                            android:text="@string/women" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/t1dp"
+                    android:background="@color/gray_f0f6fa" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/t8dp"
+                    android:paddingLeft="@dimen/t15dp"
+                    android:paddingTop="@dimen/t8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phone_number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/t16sp" />
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/t10dp"
+                        android:layout_marginRight="@dimen/t10dp"
+                        android:background="@null"
+                        android:hint="@string/input_phone_number"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:singleLine="true"
+                        android:textColor="@color/gray_aaaaaa"
+                        android:textSize="@dimen/t14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/t1dp"
+                    android:background="@color/gray_f0f6fa" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/t8dp"
+                    android:paddingLeft="@dimen/t15dp"
+                    android:paddingTop="@dimen/t8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/working"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/t16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/t10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_education"
+                            style="@style/radio_button_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/education_work" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton_online"
+                            style="@style/radio_button_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/t50dp"
+                            android:text="@string/online_student" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/t8dp"
+                android:paddingStart="@dimen/t15dp"
+                android:paddingTop="@dimen/t8dp"
+                android:text="@string/answer_subject"
+                android:textColor="@color/black"
+                android:textSize="@dimen/t18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rl_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/t8dp"
+                android:paddingLeft="@dimen/t15dp"
+                android:paddingRight="@dimen/t15dp"
+                android:paddingTop="@dimen/t8dp">
+
+                <TextView
+                    android:id="@+id/tv_subject_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/subject"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/t16sp" />
+
+                <TextView
+                    android:id="@+id/tv_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/t10dp"
+                    android:layout_toLeftOf="@id/iv_right"
+                    android:gravity="right"
+                    android:hint="选择后不可更改，请谨慎选择"
+                    android:textColor="@color/gray_666666"
+                    android:textSize="@dimen/t14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/right_icon" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/t8dp"
+                android:paddingStart="@dimen/t15dp"
+                android:paddingTop="@dimen/t8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/teacher_certification"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/t18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/t15dp"
+                    android:text="@string/upload_teaching_certificate"
+                    android:textColor="@color/gray_666666"
+                    android:textSize="@dimen/t12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/t8dp"
+                android:paddingLeft="@dimen/t15dp"
+                android:paddingTop="@dimen/t8dp">
+
+                <ImageView
+                    android:id="@+id/iv_teacher_licence"
+                    android:layout_width="@dimen/t70dp"
+                    android:layout_height="@dimen/t70dp"
+                    android:src="@mipmap/pic_add_icon" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/t8dp"
+                android:paddingStart="@dimen/t15dp"
+                android:paddingTop="@dimen/t8dp"
+                android:text="@string/education_info"
+                android:textColor="@color/black"
+                android:textSize="@dimen/t18sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/t8dp"
+
+                android:paddingTop="@dimen/t8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/t8dp"
+                    android:paddingLeft="@dimen/t15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diploma_num"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/t16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/t15dp"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:text="请上传真实的学位证书编号"
+                        android:textColor="@color/gray_666666"
+                        android:textSize="@dimen/t13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/t1dp"
+                    android:background="@color/gray_f0f6fa" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/t15dp"
+                    android:paddingTop="@dimen/t8dp">
+
+                    <ImageView
+                        android:id="@+id/iv_diploma"
+                        android:layout_width="@dimen/t70dp"
+                        android:layout_height="@dimen/t70dp"
+                        android:src="@mipmap/pic_add_icon" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/t15dp"
+                android:layout_marginTop="@dimen/t15dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cooperation_protocol"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/t16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_protocol_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/t8dp"
+                    android:clickable="true"
+                    android:src="@drawable/protocol_selector" />
+
+                <TextView
+                    android:id="@+id/tv_protocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/t5dp"
+                    android:text="我已阅读并同意《作业啦兼职教师合作协议》"
+                    android:textSize="@dimen/t12sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/t15dp"
+                android:background="@drawable/blue_corners_bg"
+                android:clickable="true"
+                android:elevation="@dimen/t1dp"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/t16sp" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/white_circle_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/t15dp"
+    android:paddingRight="@dimen/t15dp">
+
+    <ImageView
+        android:id="@+id/iv_math_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/unit_icon" />
+
+    <TextView
+        android:id="@+id/tv_math_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/t20dp"
+        android:text="常用单位换算"
+        android:textColor="@color/black"
+        android:textSize="@dimen/t16sp" />
+
+    <TextView
+        android:id="@+id/tv_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/t3dp"
+        android:text="小学数学应掌握的基本概念数理规律及应用"
+        android:textColor="@color/gray_999999"
+        android:textSize="@dimen/t12sp"
+        android:visibility="gone" />
+
+</LinearLayout>

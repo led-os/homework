@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <yc.com.homework.base.widget.CommonToolBar
+        android:id="@+id/commonToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_f0f6fa"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/t15dp"
+                android:layout_marginTop="@dimen/t15dp"
+                android:text="作业啦兼职教师合作协议"
+                android:textColor="@color/black"
+                android:textSize="@dimen/t16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/t8dp"
+                android:paddingLeft="@dimen/t8dp"
+                android:paddingRight="@dimen/t8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="甲方：武汉超时代教育科技发展有限公司"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:text="乙方：兼职在线批改作业老师"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t15dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="作业啦兼职教师合作协议（以下简称“本协议”）由武汉超时代教育科技发展有限公司（以下简称“武汉超时代教育公司”）与乙方（以下简称“您”）共同签署，在您使用作业啦软件（以下简称“本软件”）并申请老师之前，请仔细阅读本协议。"
+                    android:textSize="@dimen/t13sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t15dp"
+                    android:text="1.协议条款的确认和接纳"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="请您仔细阅读以下全部内容，如果您不同意本协议的任一或全部条款内容，请不要申请此服务。一旦您成功申请，即表示您已仔细阅读并同意完全接受本协议所有条款和所有条件的约束。此后，您不得以任何方式，直接或间接地以未阅读本协议全部或部分内容作为违反或不遵守本协议的抗辩理由。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t15dp"
+                    android:text="2.服务条款的修改"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="本协议可能不时修改，并在本软件公示，修改后的协议自公示之日起生效。您在使用本软件的各项服务时，应当及时查阅、了解并确认所修改的相关协议条款、公告内容，并自觉遵守本协议项下的条款以及该单项服务的相关条款。如果您继续使用本协议项下所涉及的服务，则视为对修改内容的同意和接受；如您不同意内容的修改，有权自行停止使用本协议项下的所有服务。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t15dp"
+                    android:text="3.软件服务的变更、中止或终止"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（1）武汉超时代教育公司保留随时变更或中止服务而无须提前向您告知或获得您许可之权利，您同意并接受，武汉超时代教育公司有权行使上述权利且不需对您或第三方承担任何责任。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（2）您知晓并同意，服务变更、中止与结束属于武汉超时代教育公司决策之内容。您不得因本协议约定之服务的变更、中止或者结束而要求武汉超时代教育公司继续提供服务或者承担任何形式的赔偿责任。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t15dp"
+                    android:text="4.软件的服务方式、服务时间"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（1）您可通过使用本软件，选择适合自己实际情况的时间，为本软件的用户提供在线辅导服务或其他本软件功能范围之内按照完成一定工作任务方式提供的服务。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（2）武汉超时代教育公司负责在本软件收取相关用户支付的服务费用，以及将您应得的服务费用支付至您的银行账户。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（3）具体的价格、计价方式、结算方式、支付方式等将于本软件中予以公示。武汉超时代教育公司有权根据软件运营情况，对上述服务价格、计算方式及支付方式作出调整，并于本软件中予以公示。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t15dp"
+                    android:text="5.您的权利及义务"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（1）在您使用申请成为老师之前，您必须首先根据真实、准确、有效的个人信息注册成为本软件的兼职在线批改作业老师，您所填写的申请作业啦老师的用户的内容与个人资料及/或上传的个人证件、证照必须真实、有效，否则武汉超时代教育公司有权拒绝您的申请或撤销您的用户/服务资格，并不给予任何赔偿。如您的个人资料有任何变动，必须及时联系工作人员进行修改。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（2）您应自行负责妥善、正确地保管、使用、维护您在本软件申请注册时取得的账户信息及账户密码。您应当对您用户帐号制作、上传、发送、传播的信息内容负全部法律责任。由于您将个人密码告知他人或与他人共享注册帐户，对本软件、武汉超时代教育公司或第三方造成的损失，武汉超时代教育公司有权采取封号，冻结佣金等措施，情节严重的武汉超时代教育公司将依法追究您相关法律责任。由此导致的任何个人资料泄露，本软件及武汉超时代教育公司不负任何责任。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（3）您可以通过登录您的账号查询您的订单详情及服务费详情。服务费结算时，可能因为银行或第三方支付、代理机构的原因，而造成您的实际收款时间延迟，您同意武汉超时代教育公司无需承担与此有关的任何责任。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（5）您在使用本软件时，必须遵循以下原则："
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="a)遵守任何予以适用的有关法律和法规；"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="b)不得为任何非法目的而使用本软件服务，不得利用本软件从事任何违法违规活动；"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="c)遵守所有与网络服务有关的网络协议、规定和程序；"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="d)不得利用本软件进行任何可能对互联网的正常运转造成不利影响的行为；"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="e)不得利用本软件进行任何不利于武汉超时代教育公司的行为；"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="f)未经本软件书面同意，不能利用本软件的各项服务在本软件或其他任何渠道上进行与作业啦软件无关的销售或其他商业性行为。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="g)遵守本软件不定时公示的服务规则；"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="h)如您违反上述约定，本软件将依法追究您的违约责任，由此给武汉超时代教育公司造成损失的，武汉超时代教育公司有权对您进行追偿。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（7）您不得使用本软件制作、上传、发送、传播敏感信息和违反国家法律制度的信息，包括但不限于下列信息："
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="a)反对宪法所确定的基本原则的；"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="b)危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="c)损害国家荣誉和利益的；"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="d)煽动民族仇恨、民族歧视，破坏民族团结的；"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="e)破坏国家宗教政策，宣扬邪教和封建迷信的；"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="f)散布谣言，扰乱社会秩序，破坏社会稳定的；"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="g)散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="h)侮辱或者诽谤他人，侵害他人合法权益的；"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="i)含有法律、行政法规禁止的其他内容的。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t15dp"
+                    android:text="6.本软件的权利及义务"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（1）武汉超时代教育公司有对您在使用本软件服务软件提供服务过程中的一切活动的监督、提示、检查的权利，如果您的行为违反有关法律法规或违反本协议条款的约定或本软件公示之规则，本软件有要求您纠正您的行为，并保留封停账号、追究责任等相关权利。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（2）您已充分明确了解并同意，本软件及武汉超时代教育公司有权就您于本软件中的任何服务行为进行定期或不定期的监控与评价，并根据您在评定当时有效的考核制度下的服务评价，进行解约、封号、罚款等惩罚性措施。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（3）本软件仅提供软件服务，除此之外的其他设备及费用，包括但不限于与相关软件服务有关的设备（如个人电脑、手机、及其他与接入互联网或移动网有关的装置）及所需的费用（如为接入互联网而支付的电话费及上网费、为使用移动网而支付的手机费）、第三方支付方式手续费等均应由您自行负担。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（4）鉴于本软件唯一的身份验证是您的用户账户，凡登录用户账户所进行的操作均视为您本人的行为。您应对账号内的行为承担全部法律责任。非因软件过错，导致账号密码遗失、账号被盗等情形，并给您或他人的民事权利造成损害的，或导致行政机关处罚，相关主管部门追究等，您应自行承担后果并负责赔偿产生的损失。若您发现自己的账号行为异常，应及时向软件反馈。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（5）如任何时候，武汉超时代教育公司发现您在注册时所提供的个人资料及/或个人证件、证照非真实、有效，或与您本人的实际情况不符，武汉超时代教育公司有权在任何时候单方解除与您的服务协议，并保留封停账号、追究责任等权利。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（6）在您对服务质量提出质疑或投诉时，本软件有权自行做出服务是否有效的判断。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t15dp"
+                    android:text="7.知识产权"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（1）本软件中所包含的任何文本、图片、标识、音频、视频、信息等全部内容、资料均受法律保护。未经相关权利人和本软件的同意，上述资料均不得以任何方式被展示于其他任何第三方软件或被用于其他任何目的。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（2）未经本软件书面同意，您不得擅自复制、修改或以其他任何方式使用上述内容、或创造与上述内容有关的衍生品。任何第三方违反本协议的规定以任何方式对软件的任何部分进行发表、复制、转载、更改、引用、链接、下载或以其他方式进行使用，或向任何其他第三方提供获取软件任何内容的渠道，均构成对本软件的侵权。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（3）您同意将您在使用本软件的过程中创作或上传的任何内容，包括但不限于笔迹、文本、图片、音频、视频等资料在全球范围内的全部著作权，包括但不限于：署名权、复制权、发行权、出租权、展览权、表演权、放映权、广播权、信息网络传播权、摄制权、改编权、翻译权、汇编权等，以及其他知识产权转让给本软件台，本协议已经构成《著作权法》所规定的书面协议，其效力及于您在作业啦提交的任何受著作权法保护的作品内容。对于任何第三人未经本软件书面许可使用该作品的行为，本软件有权独立以自己的名义，向涉嫌侵权人主张权利（包括但不限于以自身名义提出交涉、投诉、举报以及向人民法院提起诉讼等）并获得全部赔偿。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（4）对于您创作或上传到本软件的任何内容，包括但不限于笔迹、文本、图片、音频、视频等资料，本软件保留对其进行实时监控的权利，并有权依自身独立判断对任何违反法律法规或违反本协议约定或违反本软件公示规范的内容进行删除，并有权视情况终止向您提供本软件的相关服务。本软件及武汉超时代教育公司对于以上行为引起的任何后果或导致用户的任何损失不负任何责任。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（5） 因您创作或上传的内容的违法或侵害第三人的合法权益而导致本软件或其关联公司对第三方承担任何性质的赔偿、补偿或罚款而遭受损失（直接的、间接的、偶然的、惩罚性的和继发的损失），您对于本软件及武汉超时代教育公司蒙受的上述损失应承担全部的赔偿责任，本软件及武汉超时代教育公司有权从您的服务费中先行扣除。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（6）本软件上的数据禁止您或任何第三方使用任何方式（包括但不限于机器自动化或手动程序）抓取或以任何方式使用。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t15dp"
+                    android:text="8.隐私保护"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="在您使用本软件的过程中，我们将遵循合法、正当、必要的原则，收集您使用本软件的相关信息，包括您注册或登录的账户信息、您上传的信息、资料、证件、本软件自动接收的您使用本软件的信息、本软件通过合法方式收集的您自行提供的信息等。本软件仅出于向您提供更优质服务的目的收集您的信息，且本软件将对该等信息严格保密，不会泄露、篡改、毁损收集的您的信息，不会非法出售、非法向他人提供您的信息；公司不会将您的该等信息提供给任何第三方，也不会用于任何其他目的和用途，但是以下情形除外，1）经您事先同意；2）根据法律的有关规定，或者行政或司法机构的要求，向第三方或者行政、司法机构披露；3）您侵害本协议项下本软件的合法权益的情况下而为维护本软件的合法权益所必须。4）其他根据法律、法规或者政策应进行的披露。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t15dp"
+                    android:text="9.不可抗力"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（1）鉴于网络服务的特殊性（包括但不限于不可抗力、网络稳定性、系统稳定性、技术故障、所在位置、电脑关机、电脑病毒或恶意的网络攻击行为及其他任何技术、互联网络、通信线路、内容侵权等原因），您同意，本软件有权随时中断或终止部分或全部服务，本软件将尽可能及时以合理方式通知您，并尽可能在第一时间对此进行修复。但对因此导致您不能进行接单或者订单失效，造成的经济损失，本软件及武汉超时代教育公司不承担任何责任，您须承担以上风险。您同意对此类情况给予充分的谅解，由不可抗力造成本软件难以提供服务的，本软件将在不可抗力事件排除后，尽快恢复服务的提供。若由于不可抗力导致本软件难以再履行义务的，用户同意，本软件及武汉超时代教育公司无需承担法律责任。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（2）本软件需要定期或不定期地对本软件进行升级和维护，如因此类情况而造成服务中断、终止，本软件将尽可能事先通知，但无需为此承担任何责任。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t15dp"
+                    android:text="10.违约责任"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（1）因您违反法律法规规定或本协议约定，利用本软件非法活动的，本软件及武汉超时代教育公司有权立即终止继续对您提供软件服务，注销您的账号，本软件及武汉超时代教育公司有权立即与您解除本协议，并要求您赔偿由此给武汉超时代教育公司造成的全部损失。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（2）如您违反本协议的其他约定的，您应承担相应的违约责任。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t15dp"
+                    android:text="11.免责声明"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（1）您在使用本软件的过程中应遵守国家法律法规及政策规定，对您所制作、上传、发送、传播的信息和内容承担全部法律责任。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（2）如您在本软件提供服务与您全职工作单位发生纠纷或争议，武汉超时代教育公司不承担任何责任，由您自行解决并须确保武汉超时代教育公司不会因此遭受任何损失。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（3）如您违反本协议的规定，导致任何第三方向本软件主张任何索赔、要求或损失，您同意全额赔偿本软件，使本软件免受损害。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t15dp"
+                    android:text="12.其他条款"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（1）本协议所约定的任何条款无论因何种原因部分或全部无效或不具有执行力，本协议的其余条款仍应有效并具备约束力。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:text="（2）本协议的订立、执行和解释及纠纷的解决均应适用中华人民共和国法律。如双方就本协议内容或执行发生任何纠纷或争议，首先应友好协商解决，协商不成的，任何一方均可向武汉市洪山区人民法院提起诉讼。"
+                    android:textSize="@dimen/t13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t15dp"
+                    android:text="13．武汉超时代教育公司拥有本协议的最终解释权。"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

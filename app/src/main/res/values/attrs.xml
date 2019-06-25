@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MainItemView">
+        <attr name="select_icon" format="reference" />
+        <attr name="normal_icon" format="reference" />
+        <attr name="title" format="string" />
+        <attr name="select_titleColor" format="color" />
+        <attr name="normal_titleColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MainMineItemView">
+        <attr name="mine_icon" format="reference" />
+        <attr name="mine_title" format="string" />
+        <attr name="show_button" format="boolean" />
+        <attr name="show_arrow" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="BaseSettingView">
+        <attr name="setting_title" format="string" />
+        <attr name="setting_titleSize" format="dimension" />
+        <attr name="setting_show_extra" format="boolean" />
+        <attr name="setting_show_arrow" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="VerticalTextView">
+        <attr name="lineSpacingExtra" format="dimension" />
+        <attr name="charSpacingExtra" format="dimension" />
+        <attr name="textLeftToRight" format="boolean" />
+        <attr name="underLineText" format="boolean" />
+        <attr name="underLineWidth" format="float" />
+        <attr name="underLineColor" format="color" />
+        <attr name="underlineOffset" format="dimension" />
+        <attr name="textHeightLightColor" format="color" />
+
+    </declare-styleable>
+
+    <declare-styleable name="BaseIndexView">
+        <attr name="index_icon" format="reference" />
+        <attr name="index_title" format="string" />
+        <attr name="index_title_color" format="color" />
+        <attr name="index_title_show" format="boolean" />
+    </declare-styleable>
+
+
+    <!--<declare-styleable name="BaseBottomTab">-->
+    <!--<attr name="select_icon" format="reference" />-->
+    <!--<attr name="unselect_icon" format="reference" />-->
+    <!--<attr name="tab_title" format="string" />-->
+    <!--<attr name="select_textColor" format="color" />-->
+    <!--<attr name="unselect_textColor" format="color" />-->
+    <!--<attr name="select" format="boolean" />-->
+    <!--</declare-styleable>-->
+
+    <declare-styleable name="SelectGradeView">
+        <attr name="select_name" format="string" />
+        <attr name="select_name_color" format="color" />
+        <attr name="select_margin_top" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="StateView">
+        <attr name="gravity" format="enum">
+            <enum name="Top" value="1" />
+            <enum name="Left" value="2" />
+            <enum name="Right" value="3" />
+            <enum name="Bottom" value="4" />
+            <enum name="Center" value="5" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="IncomeView">
+        <attr name="pic" format="reference" />
+        <attr name="name" format="string" />
+        <attr name="nameSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="BaseMathView">
+        <attr name="math_icon" format="reference" />
+        <attr name="math_name" format="string" />
+        <attr name="math_show_extra" format="boolean" />
+        <attr name="math_tag" format="string" />
+    </declare-styleable>
+
+</resources>

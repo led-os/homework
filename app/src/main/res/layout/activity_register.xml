@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#469df8"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/status_bar_height">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingEnd="@dimen/t15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="@dimen/t16sp" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/login"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/t20dp"
+        android:src="@mipmap/big_default_ivotor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/t10dp"
+        android:text="首次登录或注册赠送2枚金币"
+        android:textColor="#55DB78"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/t40dp"
+        android:layout_marginRight="@dimen/t40dp"
+        android:layout_marginTop="@dimen/t20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t45dp"
+            android:background="@drawable/login_white_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/t10dp"
+            android:paddingRight="@dimen/t10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/user_small_icon" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t45dp"
+                android:layout_marginLeft="@dimen/t10dp"
+                android:background="@null"
+                android:hint="@string/input_phone_number"
+                android:inputType="number|phone"
+                android:maxLength="11"
+                android:textSize="@dimen/t14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t45dp"
+            android:layout_marginTop="@dimen/t15dp">
+
+            <LinearLayout
+                android:id="@+id/ll_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/login_white_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/t10dp"
+                android:paddingRight="@dimen/t10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/verify_code_small_icon" />
+
+                <EditText
+                    android:id="@+id/et_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/t45dp"
+                    android:layout_marginLeft="@dimen/t10dp"
+                    android:background="@null"
+                    android:hint="@string/input_verify_code"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textSize="@dimen/t14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_get_code"
+                android:layout_width="@dimen/t70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/t10dp"
+                android:background="@drawable/login_white_bg"
+                android:gravity="center"
+                android:text="@string/verify_code"
+                android:textColor="@color/app_selected_color" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t45dp"
+            android:layout_marginTop="@dimen/t15dp"
+            android:background="@drawable/login_white_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/t10dp"
+            android:paddingRight="@dimen/t10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/user_lock" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t45dp"
+                android:layout_marginLeft="@dimen/t10dp"
+                android:background="@null"
+                android:hint="@string/input_pwd"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="@dimen/t14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_invate_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/t15dp"
+            android:text="如果有邀请码，请点击？"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/ll_invate_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t45dp"
+            android:layout_marginTop="@dimen/t15dp"
+            android:background="@drawable/login_white_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/t10dp"
+            android:paddingRight="@dimen/t10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_invate_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/invatate_small_icon" />
+
+            <EditText
+                android:id="@+id/et_invate_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t45dp"
+                android:layout_marginLeft="@dimen/t10dp"
+                android:background="@null"
+                android:hint="@string/input_invate_code"
+                android:textSize="@dimen/t14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t45dp"
+            android:layout_marginTop="@dimen/t15dp"
+            android:background="@drawable/register_btn_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/t16sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

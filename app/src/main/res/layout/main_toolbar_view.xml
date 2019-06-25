@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbarWarpper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/toolbar_bg_color"
+    android:paddingTop="@dimen/status_bar_height">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_sub"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/iv_left_icon"
+            android:layout_width="@dimen/t38dp"
+            android:layout_height="@dimen/t38dp" />
+
+        <TextView
+            android:id="@+id/tv_tb_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/t20sp" />
+
+        <FrameLayout
+            android:id="@+id/toolbar_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/t15dp">
+
+            <LinearLayout
+                android:id="@+id/ll_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_right_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/t10sp" />
+
+                <ImageView
+                    android:id="@+id/iv_right_icon"
+                    android:layout_width="@dimen/t10dp"
+                    android:layout_height="@dimen/t10dp"
+                    android:layout_marginLeft="@dimen/t2dp"
+                    android:src="@mipmap/down_arrow" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_right_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/toolbar_share"
+                android:visibility="gone" />
+
+            <ViewStub
+                android:id="@+id/viewStub_right_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout="@layout/common_textview" />
+
+        </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+
+</FrameLayout>

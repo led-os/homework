@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/login_white_bg"
+    android:clickable="true"
+    android:focusable="true">
+
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/t15dp">
+
+        <LinearLayout
+            android:id="@+id/ll_top_uncheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/t10dp">
+
+            <yc.com.homework.examine.widget.VerticalTextView
+                android:id="@+id/verticalTextView"
+                android:layout_width="@dimen/t24dp"
+                android:layout_height="@dimen/t46dp"
+                android:background="@drawable/subject_green_bg"
+                android:gravity="center"
+                android:paddingLeft="@dimen/t3dp"
+                android:paddingRight="@dimen/t5dp"
+                android:text="英语"
+                android:textColor="@color/white"
+                android:textSize="@dimen/t13sp" />
+
+            <ImageView
+                android:id="@+id/iv_teacher_avator"
+                android:layout_width="@dimen/t48dp"
+                android:layout_height="@dimen/t48dp"
+                android:layout_marginLeft="@dimen/t10dp"
+                android:src="@mipmap/default_teacher_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/t15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_teacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="李老师已完成作业检查"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t6dp">
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2018-11-20"
+                        android:textColor="@color/gray_aaaaaa" />
+
+                    <TextView
+                        android:id="@+id/tv_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/t8dp"
+                        android:text="星期四"
+                        android:textColor="@color/gray_aaaaaa" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/history_gray_bg"
+            android:gravity="center"
+            android:padding="@dimen/t10dp">
+
+            <ImageView
+                android:id="@+id/iv_homework"
+                android:layout_width="@dimen/t70dp"
+                android:layout_height="@dimen/t70dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/history_homework_exam" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/t15dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="正确率"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/t16sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_accuracy"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/t10dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/t16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/t5dp">
+
+                                <TextView
+                                    android:id="@+id/tv_correct"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="对 5 题"
+                                    android:textColor="@color/green_2be32b" />
+
+                                <TextView
+                                    android:id="@+id/tv_error"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/t20dp"
+                                    android:text="错 3 题"
+                                    android:textColor="@color/red_f14343" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_score"
+                            android:layout_width="@dimen/t50dp"
+                            android:layout_height="@dimen/t50dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/score_a" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_remark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/t3dp"
+                        android:background="@drawable/login_white_bg"
+                        android:paddingBottom="@dimen/t5dp"
+                        android:paddingLeft="@dimen/t10dp"
+                        android:paddingRight="@dimen/t10dp"
+                        android:paddingTop="@dimen/t5dp"
+                        android:text="勇敢面对难题，不懂就问!"
+                        android:textColor="@color/gray_666666" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_no_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/t72dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_subject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/t3dp"
+                        android:background="@drawable/subject_yellow_bg"
+                        android:paddingBottom="@dimen/t3dp"
+                        android:paddingLeft="@dimen/t10dp"
+                        android:paddingRight="@dimen/t10dp"
+                        android:paddingTop="@dimen/t3dp"
+                        android:text="@string/yuwen"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_date1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2018-11-20"
+                            android:textColor="@color/gray_aaaaaa" />
+
+                        <TextView
+                            android:id="@+id/tv_teacher1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/t3dp"
+                            android:text="李老师已完成作业检查"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/homework_state"
+        android:visibility="gone" />
+</RelativeLayout>

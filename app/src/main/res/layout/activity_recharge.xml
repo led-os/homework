@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <yc.com.homework.base.widget.CommonToolBar
+        android:id="@+id/commonToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <yc.com.homework.base.widget.StateView
+        android:id="@+id/stateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_f0f6fa" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_f0f6fa"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gold_faf6f1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/t10sp"
+            android:paddingTop="@dimen/t10sp"
+            android:text="测试期间充值有优惠，50个金币只要39！"
+            android:textColor="@color/gold_7f500e" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/t10dp"
+            android:paddingLeft="@dimen/t15dp"
+            android:paddingTop="@dimen/t10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_coin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/t18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_my_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/t30dp"
+                android:text="100"
+                android:textColor="@color/gold_7f500e"
+                android:textSize="@dimen/t22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/t15dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recharge_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/t10dp"
+                android:text="说明：金币用来批改作业，检查批改一张作业消耗2金币"
+                android:textColor="@color/gray_aaaaaa"
+                android:textSize="@dimen/t12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/btn_zfb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:id="@+id/ic_pay_icon_zfb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:src="@mipmap/ic_pay_zfb" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/ic_pay_icon_zfb"
+                    android:text="@string/recharge_pay_zfb"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/ic_selected_zfb"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:checked="true"
+                    android:src="@drawable/vip_pay_selector" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_f0f6fa" />
+
+            <RelativeLayout
+                android:id="@+id/btn_wx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:id="@+id/ic_pay_icon_wx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:src="@mipmap/ic_pay_wx" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/ic_pay_icon_wx"
+                    android:text="@string/recharge_pay_wx"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/ic_selected_wx"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:src="@drawable/vip_pay_selector" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t48dp"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:layout_marginRight="@dimen/t15dp"
+            android:layout_marginTop="@dimen/t30dp"
+            android:background="@drawable/recharge_pay_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/t10dp"
+            android:paddingTop="@dimen/t10dp"
+            android:text="@string/immediately_pay"
+            android:textColor="@color/white"
+            android:textSize="@dimen/t16sp" />
+
+        <TextView
+            android:id="@+id/tv_invate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t48dp"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:layout_marginRight="@dimen/t15dp"
+            android:layout_marginTop="@dimen/t10dp"
+            android:background="@drawable/recharge_share_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/t10dp"
+            android:paddingTop="@dimen/t10dp"
+            android:text="@string/invitation_friend"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="@dimen/t16sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

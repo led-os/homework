@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <yc.com.homework.base.widget.CommonToolBar
+        android:id="@+id/commonToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_f0f6fa"
+        android:paddingTop="@dimen/t10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <yc.com.homework.mine.widget.BaseSettingView
+                android:id="@+id/baseSettingView_avtor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:setting_show_extra="true"
+                app:setting_title="@string/avtar" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t1dp"
+                android:layout_marginLeft="@dimen/t15dp"
+                android:layout_marginRight="@dimen/t15dp"
+                android:background="@color/gray_f0f6fa" />
+
+            <yc.com.homework.mine.widget.BaseSettingView
+                android:id="@+id/baseSettingView_Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:setting_show_arrow="false"
+                app:setting_show_extra="true"
+                app:setting_title="@string/ID" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t1dp"
+                android:layout_marginLeft="@dimen/t15dp"
+                android:layout_marginRight="@dimen/t15dp"
+                android:background="@color/gray_f0f6fa" />
+
+            <yc.com.homework.mine.widget.BaseSettingView
+                android:id="@+id/baseSettingView_nickName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:setting_show_extra="true"
+                app:setting_title="@string/modify_nickname" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t1dp"
+                android:layout_marginLeft="@dimen/t15dp"
+                android:layout_marginRight="@dimen/t15dp"
+                android:background="@color/gray_f0f6fa" />
+
+            <yc.com.homework.mine.widget.BaseSettingView
+                android:id="@+id/baseSettingView_grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:setting_show_extra="true"
+                app:setting_title="@string/setting_grade" />
+
+            <yc.com.homework.mine.widget.BaseSettingView
+                android:id="@+id/baseSettingView_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/t10dp"
+                app:setting_show_extra="true"
+                app:setting_title="@string/phone_number" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t1dp"
+                android:layout_marginLeft="@dimen/t15dp"
+                android:layout_marginRight="@dimen/t15dp"
+                android:background="@color/gray_f0f6fa" />
+
+            <yc.com.homework.mine.widget.BaseSettingView
+                android:id="@+id/baseSettingView_modify_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:setting_show_extra="true"
+                app:setting_title="@string/modify_pwd" />
+
+            <yc.com.homework.mine.widget.BaseSettingView
+                android:id="@+id/baseSettingView_clear_cache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/t10dp"
+                app:setting_show_extra="true"
+                app:setting_title="@string/clear_cache" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t1dp"
+                android:layout_marginLeft="@dimen/t15dp"
+                android:layout_marginRight="@dimen/t15dp"
+                android:background="@color/gray_f0f6fa" />
+
+            <yc.com.homework.mine.widget.BaseSettingView
+                android:id="@+id/baseSettingView_version_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:setting_show_extra="true"
+                app:setting_title="@string/version_update" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_exit_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/main_item_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/logout"
+            android:textColor="@color/red_ff5d5d"
+            android:textSize="@dimen/t16sp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

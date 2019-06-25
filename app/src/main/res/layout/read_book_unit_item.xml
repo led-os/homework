@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_small_bg"
+                android:gravity="left|center"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_book_unit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Unit 1 Hello,Good Morning"
+        android:textColor="@color/black_333"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_book_unit_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_book_unit_name"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="6句话"
+        android:textColor="@color/gray_999"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:id="@+id/iv_course_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/course_vip_icon"/>
+</RelativeLayout>

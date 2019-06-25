@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t2dp"
+            android:background="@drawable/white_small_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/t15dp"
+            android:paddingTop="@dimen/t15dp"
+            android:text="@string/take_photo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/t16sp" />
+
+        <TextView
+            android:id="@+id/tv_take_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t5dp"
+            android:background="@drawable/white_small_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/t15dp"
+            android:paddingTop="@dimen/t15dp"
+            android:text="@string/from_album"
+            android:textColor="@color/black"
+            android:textSize="@dimen/t16sp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

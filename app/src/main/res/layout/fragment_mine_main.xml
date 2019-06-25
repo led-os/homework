@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/main_mine_top_bg">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="@dimen/t15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/t10dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/t5dp"
+                    android:paddingRight="@dimen/t5dp">
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/message_icon" />
+
+                        <TextView
+                            android:id="@+id/tv_unread_msg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:background="@drawable/message_oval_bg"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/t8sp"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/t5dp"
+                        android:text="@string/message"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="-25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_avator"
+                android:layout_width="@dimen/t63dp"
+                android:layout_height="@dimen/t63dp"
+                android:src="@mipmap/deafult_avator" />
+
+            <LinearLayout
+                android:id="@+id/ll_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="@dimen/t10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/t18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_upload_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/t12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_time_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t3dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/t12sp"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---"
+                        android:textColor="@color/white" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_edit"
+                        android:layout_width="@dimen/t30dp"
+                        android:layout_height="@dimen/t30dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/t5dp"
+                            android:src="@mipmap/mine_edit_icon" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_f0f6fa"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/t63dp">
+
+            <yc.com.homework.mine.widget.MainMineItemView
+                android:id="@+id/mainMineItemView_coin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_item_bg"
+                android:clickable="true"
+                android:elevation="@dimen/t1dp"
+                android:focusable="true"
+                android:visibility="gone"
+                app:mine_icon="@mipmap/mine_coin_icon"
+                app:mine_title="@string/service_card"
+                app:show_button="false" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_f0f6fa"
+                android:visibility="gone" />
+
+            <yc.com.homework.mine.widget.MainMineItemView
+                android:id="@+id/mainMineItemView_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_item_bg"
+                android:clickable="true"
+                android:elevation="@dimen/t1dp"
+                android:focusable="true"
+                android:visibility="gone"
+                app:mine_icon="@mipmap/mine_share_icon"
+                app:mine_title="@string/invite_get_coin" />
+
+            <yc.com.homework.mine.widget.MainMineItemView
+                android:id="@+id/mainMineItemView_apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/t8dp"
+                android:background="@drawable/main_item_bg"
+                android:clickable="true"
+                android:elevation="@dimen/t1dp"
+                android:focusable="true"
+                app:mine_icon="@mipmap/mine_apply_icon"
+                app:mine_title="@string/apply_teacher" />
+
+            <yc.com.homework.mine.widget.MainMineItemView
+                android:id="@+id/mainMineItemView_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/t8dp"
+                android:background="@drawable/main_item_bg"
+                android:clickable="true"
+                android:elevation="@dimen/t1dp"
+                android:focusable="true"
+                app:mine_icon="@mipmap/mine_order"
+                app:mine_title="@string/my_order" />
+
+            <yc.com.homework.mine.widget.MainMineItemView
+                android:id="@+id/ll_qq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/t8dp"
+                android:background="@drawable/main_item_bg"
+                android:clickable="true"
+                android:elevation="@dimen/t1dp"
+                android:focusable="true"
+                app:mine_icon="@mipmap/mine_qq_group"
+                app:mine_title="作业啦QQ交流群：856914094"
+                app:show_arrow="false" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_f0f6fa" />
+
+            <LinearLayout
+                android:id="@+id/ll_service_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_item_bg"
+                android:clickable="true"
+                android:elevation="@dimen/t1dp"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/t15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/mine_service_phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/t10dp"
+                    android:text="客服电话:  "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/t16sp" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13164125027"
+                    android:textColor="@color/app_selected_color"
+                    android:textSize="@dimen/t16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/t10dp"
+                    android:text="(微信同号)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/t16sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_f0f6fa" />
+
+            <LinearLayout
+                android:id="@+id/ll_service_wx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_item_bg"
+                android:clickable="true"
+                android:elevation="@dimen/t1dp"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/t15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/mine_service_phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/t10dp"
+                    android:text="客服微信:  "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/t16sp" />
+
+                <TextView
+                    android:id="@+id/tv_wx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nuanjiguiren886"
+                    android:textColor="@color/app_selected_color"
+                    android:textSize="@dimen/t16sp" />
+
+            </LinearLayout>
+
+
+            <yc.com.homework.mine.widget.MainMineItemView
+                android:id="@+id/mainMineItemView_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/t8dp"
+                android:background="@drawable/main_item_bg"
+                android:clickable="true"
+                android:elevation="@dimen/t1dp"
+                android:focusable="true"
+                app:mine_icon="@mipmap/mine_setting_icon"
+                app:mine_title="@string/setting" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/t20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/t15dp"
+                    android:layout_marginRight="@dimen/t15dp"
+                    android:layout_marginTop="@dimen/t10dp"
+                    android:background="@mipmap/everyday_starlight_bg"
+                    android:paddingLeft="@dimen/t25dp"
+                    android:paddingRight="@dimen/t25dp"
+                    android:paddingTop="@dimen/t5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_teach_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15"
+                            android:textColor="@color/white"
+                            android:textSize="40sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="已学习天数"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/t2dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/t8dp"
+                        android:layout_marginRight="@dimen/t8dp"
+                        android:background="@color/white"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/t25dp"
+                        android:layout_marginTop="@dimen/t10dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/today_ana"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/t20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_starlight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/t3dp"
+                            android:lineSpacingExtra="@dimen/t2dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/t14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

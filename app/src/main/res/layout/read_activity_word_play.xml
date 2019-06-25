@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_f0f6fa"
+              android:orientation="vertical">
+
+    <yc.com.homework.base.widget.MainToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </yc.com.homework.base.widget.MainToolBar>
+
+    <yc.com.homework.base.widget.StateView
+        android:id="@+id/sv_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </yc.com.homework.base.widget.StateView>
+
+    <RelativeLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_f0f6fa">
+
+        <!--<android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_word_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="110dp">
+        </android.support.v7.widget.RecyclerView>-->
+
+        <ExpandableListView
+            android:id="@+id/rv_word_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="110dp"
+            android:childDivider="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="1px"
+            android:gravity="center"
+            android:listSelector="#00000000"
+            android:scrollbars="none">
+        </ExpandableListView>
+
+        <LinearLayout
+            android:id="@+id/layout_word_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_ddd"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前朗读"/>
+
+                <TextView
+                    android:id="@+id/tv_read_current_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/app_selected_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"/>
+
+                <TextView
+                    android:id="@+id/tv_read_total_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center">
+
+                <ProgressBar
+                    android:id="@+id/pb_read_num"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="200dp"
+                    android:layout_height="8dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/read_word_bar"
+                    android:secondaryProgress="50"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/layout_read_all"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/read_all_word_btn"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部朗读"
+                        android:textColor="@color/white"/>
+
+                    <ImageView
+                        android:id="@+id/iv_read_all"
+                        android:layout_width="16dp"
+                        android:layout_height="11dp"
+                        android:layout_marginLeft="2dp"
+                        android:src="@mipmap/read_audio_white_stop"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_spell_word"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/read_spell_word_btn">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="拼写朗读"
+                        android:textColor="@color/white"/>
+
+                    <ImageView
+                        android:id="@+id/iv_spell_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/spell_selected_icon"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_pass_word"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/read_pass_word_btn"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="单词闯关"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

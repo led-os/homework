@@ -1,0 +1,271 @@
+<resources>
+    <string name="app_name">作业啦</string>
+    <string name="homework_exam">作业批改</string>
+    <string name="mine">我的</string>
+    <string name="history">查看作业批改记录</string>
+    <string name="history_new">查看作业记录</string>
+    <string name="message">消息</string>
+    <string name="coin">金币</string>
+    <string name="apply_teacher">申请作业批改</string>
+    <string name="my_order">我的订单</string>
+    <string name="setting">设置</string>
+    <string name="invite_get_coin">分享成功解锁课本点读</string>
+    <string name="immediately_recharge">立即充值</string>
+    <string name="coin_detail">金币明细</string>
+    <string name="use_introduce">使用说明</string>
+    <string name="recharge">充值</string>
+    <string name="my_coin">我的金币</string>
+    <string name="recharge_pay_zfb">支付宝充值</string>
+    <string name="recharge_pay_wx">微信充值</string>
+    <string name="immediately_pay">立即支付</string>
+    <string name="invitation_friend">邀请好友注册得金币</string>
+    <string name="yuan">元</string>
+    <string name="teaching_qualification">任教资格</string>
+    <string name="work_feature">工作特点</string>
+    <string name="apply">我要申请</string>
+    <string name="avtar">图像</string>
+    <string name="ID">ID号</string>
+    <string name="logout">退出登录</string>
+    <string name="phone_number">手机号</string>
+    <string name="modify_pwd">修改密码</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="version_update">版本更新</string>
+    <string name="go_bind">去绑定</string>
+    <string name="person_details">个人信息</string>
+    <string name="name">姓名</string>
+    <string name="input_real_name">请填写真实姓名</string>
+    <string name="sex">性别 </string>
+    <string name="man">男</string>
+    <string name="women">女</string>
+    <string name="input_phone_number">请输入您的手机号</string>
+    <string name="working">就职于</string>
+    <string name="education_work">教育相关工作</string>
+    <string name="online_student">在线学生</string>
+    <string name="input_apply_info">填写申请资料</string>
+    <string name="answer_subject">答题科目</string>
+    <string name="teacher_certification">教师资格证</string>
+    <string name="subject">科目</string>
+    <string name="upload_teaching_certificate">请上传教师资格证</string>
+    <string name="education_info">学历信息</string>
+    <string name="diploma_num">学位证书编号</string>
+    <string name="cooperation_protocol">合作协议</string>
+    <string name="submit">提 交</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="verify_code">验证码</string>
+    <string name="input_verify_code">请输入验证码</string>
+    <string name="bind_phone">绑定手机号</string>
+    <string name="new_pwd">新的密码</string>
+    <string name="repeat_pwd">重复密码</string>
+    <string name="input_sex_number">不少于六位数</string>
+    <string name="confirm">确 定</string>
+    <string name="register">注册</string>
+    <string name="input_pwd">请输入密码</string>
+    <string name="input_invate_code">请输入邀请码</string>
+    <string name="english">英语</string>
+    <string name="yuwen">语文</string>
+    <string name="mathematics">数学</string>
+    <string name="wx">微信</string>
+    <string name="wx_circle">朋友圈</string>
+    <string name="qq">QQ</string>
+    <string name="share_cancel">取消分享</string>
+    <string name="select_subject">选择学科</string>
+    <string name="upload">上传</string>
+    <string name="tint">提示</string>
+    <string name="cancel">取消</string>
+    <string name="is_exit">是否退出%s？</string>
+    <string name="user_id">ID：%1$s</string>
+    <string name="first_register">首次注册送2枚金币</string>
+    <string name="input_grade">你还没有填写年级</string>
+    <string name="modify_nickname">修改昵称</string>
+    <string name="select_grade">请选择年级</string>
+    <string name="input_nickname">请填写昵称</string>
+    <string name="hot_homework_show">热门作业展示</string>
+    <string name="take_photo">拍照</string>
+    <string name="from_album">从相册选择</string>
+    <string name="accuracy_rate">%1$d</string>
+    <string name="correct_num">对 %1$d 题</string>
+    <string name="error_num">错 %1$d 题</string>
+    <string name="share_correct_num">正确：%1$d</string>
+    <string name="share_error_num">错误：%1$d</string>
+    <string name="my_invite_code">我的邀请码</string>
+    <string name="please_upload_homework">请上传作业进行检查</string>
+    <string name="be_marked">%1$d个待批改</string>
+    <string name="midnight">%1$d个批改中</string>
+    <string name="teacher_check">%1$s已完成作业检查</string>
+    <string name="homework_correcting">金币用于批改作业，检查批改一张作业消耗2金币</string>
+    <string name="teacher_checking">%1$s正在检查中</string>
+    <string name="login_register">登录/注册</string>
+    <string name="modify_success">您有%1$d份作业已批改完成</string>
+    <string name="modify_reback">您有%1$d份作业被退回</string>
+    <string name="edit">编辑</string>
+    <string name="version">版本</string>
+    <string name="add_book">添加课本</string>
+    <string name="junior_school">小学</string>
+    <string name="middle_school">初中</string>
+    <string name="my_textbook">我的教材</string>
+    <string name="done">完成</string>
+    <string name="stop">停止</string>
+    <string name="excellence_homework_show">热门作业展示</string>
+    <string name="upload_count">可上传次数：%1$d次</string>
+    <string name="time_limit">服务卡有效期限：%1$s</string>
+    <string name="service_card">服务卡</string>
+    <string name="setting_grade">设置年级</string>
+    <string name="orderid">订单号：</string>
+    <string name="order_state">订单状态：%1$s</string>
+    <string name="book_read">课本点读</string>
+    <string name="teach_subject">学科</string>
+    <string name="unlock_read">分享好友，解锁点读</string>
+    <string name="load_file">正在加载音频文件</string>
+    <string name="service_buy">服务卡购买</string>
+    <string name="index">首页</string>
+    <string name="welfare">福利</string>
+    <string name="answer_look">答案查询</string>
+    <string name="today_ana">今日星语</string>
+    <string name="book_read_chapter">%1$d节</string>
+    <string name="current_version">当前版本：v%1$s</string>
+    <string name="soundmark_teach">音标学习</string>
+    <string name="more">更多</string>
+    <string name="teach_tool">学习小工具</string>
+    <string name="chinese_composition">语文作文</string>
+    <string name="mathematics_formula">数学公式</string>
+    <string name="english_word">英语单词</string>
+    <string name="reading_style">精品阅读</string>
+    <string name="read_count">%1$d阅读</string>
+    <string name="other_teach">其他学习</string>
+    <string name="unit">单元</string>
+    <string name="other">其他</string>
+    <string name="service_wx">客服微信</string>
+
+    <string-array name="wall_subject_array">
+        <item>全部</item>
+        <item>语文</item>
+        <item>数学</item>
+        <item>英语</item>
+    </string-array>
+
+    <string-array name="homework_state">
+        <item>待批改</item>
+        <item>批改中</item>
+        <item>已批改</item>
+        <item>已退回</item>
+    </string-array>
+    <string-array name="order_detail">
+        <!--<item>金币明细</item>-->
+        <item>订单明细</item>
+
+    </string-array>
+
+    <string name="phonetic_introduce">音标简介</string>
+    <string name="international_phonetic_introduce">国际音标简介</string>
+    <string name="service_phone">客服电话：</string>
+    <string name="service_wechat">客服微信：</string>
+    <string name="study_hint">每天十分钟，十天学会音标</string>
+    <string name="faying_study">发音学习</string>
+    <string name="faying_perception">发音感知</string>
+    <string name="faying_practice">发音练习</string>
+    <string name="faying_essentials">发音要领</string>
+    <string name="faying_apply">发音运用</string>
+
+    <string name="vip_price">¥%1$s</string>
+    <string name="origin_price">原价¥%1$s元</string>
+    <string name="phone_tint">为了给您提供更好的服务，请填写您的联系方式</string>
+
+    <string name="click_to_skip"> 点击跳过 %d</string>
+
+    <string-array name="study_apply_array">
+        <item>单词</item>
+        <item>短语</item>
+        <item>句子</item>
+    </string-array>
+
+    <!-- 标点符号 -->
+    <string-array name="punc_entries">
+        <item>有标点</item>
+        <item>无标点</item>
+    </string-array>
+    <string-array name="punc_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+
+    <!-- 语言 -->
+    <string-array name="language_entries">
+        <item>普通话</item>
+        <item>粤语</item>
+        <item>英语</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>mandarin</item>
+        <item>cantonese</item>
+        <item>en_us</item>
+    </string-array>
+    <string name="pref_key_iat_show">iat_show</string>
+    <string name="pref_title_iat_show">显示听写界面</string>
+
+    <string name="pref_key_translate">translate</string>
+    <string name="pref_title_translate">翻译</string>
+
+    <string name="evaluating_good_result">%1$s分，good</string>
+    <string name="practice_progress">%1$d/3</string>
+    <string name="vip_equities">会员权益</string>
+    <string name="play">播放</string>
+    <string name="record">录音</string>
+    <string name="playback">回放</string>
+    <string name="diandu">课本点读</string>
+
+    <string-array name="study_category">
+        <item>国际音标学习</item>
+        <item>趣味音标微课</item>
+    </string-array>
+
+
+    <string name="seek">搜索</string>
+
+    <string name="main_collect">我的收藏</string>
+    <string name="input_book_name">请输入书籍相关名称</string>
+    <string name="grade">年级</string>
+    <string name="part">上下册</string>
+
+    <string name="download">下载</string>
+    <string name="share">分享</string>
+    <string name="all">全部</string>
+    <string name="base_ok">确定</string>
+    <string name="warm_tint">温馨提示</string>
+    <string name="tint_content">亲，分享给微信群或朋友后，即可查看本书答案！</string>
+    <string name="delete_tint">删除后就不能离线看答案了，确定吗？</string>
+    <string name="hot_book">热门书籍</string>
+    <string name="collect_cancel">取消收藏</string>
+    <string name="scan_tint">扫码提示</string>
+    <string name="shared">已分享</string>
+    <string name="upload_answer">上传答案</string>
+    <string name="feedback">反馈</string>
+    <string name="forward_explain">奖励须知</string>
+    <string name="collect">收藏</string>
+    <string name="unit_conversion">常用单位换算</string>
+    <string name="graph_conversion">常用图形换算</string>
+    <string name="math_formula">常用数量关系等式</string>
+    <string name="olympiad_trees">奥数植树问题</string>
+    <string name="law">奥数中常用数据及规律</string>
+    <string name="input_composition_title">请输入作文标题</string>
+    <string name="search">搜索</string>
+    <string name="hot_search">热门搜索</string>
+    <string name="refresh">刷新</string>
+    <string name="recent_search">最近搜索</string>
+    <string name="clear">清空</string>
+    <string name="read_study_grade_text">在读年级</string>
+    <string name="read_book_version_text">教材版本</string>
+    <string name="read_book_unit_text">教材</string>
+    <string name="read_word_sentence_text">句话</string>
+    <string name="read_word_check_text">检查</string>
+    <string name="read_word_right_text">太棒了，你答对了!</string>
+    <string name="read_word_next_text">下一题</string>
+    <string name="read_word_remind_text">正确答案：</string>
+    <string name="read_word_again_text">好可惜，你答错了再来试试!</string>
+    <string name="read_word_again_btn_text">再做一遍</string>
+    <string name="word_time_out_error_text">很可惜，你超时啦，再试试</string>
+    <string name="word_sentence_count_text">个单词</string>
+    <string name="pay_now">立即开通</string>
+    <string name="my_upload">我的上传</string>
+
+</resources>

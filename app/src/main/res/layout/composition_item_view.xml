@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/square_white_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/t10dp">
+
+    <TextView
+        android:id="@+id/tv_composition_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="秋天"
+        android:textColor="@color/black"
+        android:textSize="@dimen/t16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/t5dp">
+
+        <TextView
+            android:id="@+id/tv_composition_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人教版"
+            android:textColor="@color/gray_999"
+            android:textSize="@dimen/t12sp" />
+
+        <TextView
+            android:id="@+id/tv_composition_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/t10dp"
+            android:text="三年级上册"
+            android:textColor="@color/gray_999"
+            android:textSize="@dimen/t12sp" />
+
+        <TextView
+            android:id="@+id/tv_composition_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/t10dp"
+            android:text="第三单元"
+            android:textColor="@color/gray_999"
+            android:textSize="@dimen/t12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_composition_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/t5dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="@dimen/t3dp"
+        android:maxLines="3"
+        android:text="她长着一双水汪汪的眼睛，弯弯的眉毛，圆圆的小脸蛋，一大把头发像纱丝一样垂下来，她今年已经快9岁了。
+她很爱生气，当你一不小心惹到她，她准会用生气的眼神盯着你看，好像要把你吃掉一样。她喜欢跑步，有一次上体育课跑步的时候，她像箭一样跑过去，比赢了一个又一个同学，最后，她得了第一名。"
+        android:textColor="@color/gray_555555"
+        android:textSize="@dimen/t12sp" />
+
+</LinearLayout>

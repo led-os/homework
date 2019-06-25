@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/toast_bg"
+    android:paddingLeft="@dimen/t20dp"
+    android:paddingRight="@dimen/t20dp"
+    android:paddingTop="@dimen/t15dp"
+    android:paddingBottom="@dimen/t15dp">
+
+
+    <TextView
+        android:id="@+id/tv_mess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/t2dp"
+        android:text="toast"
+        android:textColor="@color/white"
+        android:textSize="@dimen/t16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/login_white_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/t15dp"
+    android:paddingLeft="@dimen/t12dp"
+    android:paddingRight="@dimen/t12dp"
+    android:paddingTop="@dimen/t15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/load_file"
+        android:textColor="@color/black" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t10dp"
+        android:layout_marginTop="@dimen/t10dp"
+        android:max="100"
+        android:progressDrawable="@drawable/progressbar_drawable" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/t8dp">
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textColor="@color/gray_aaaaaa" />
+
+        <TextView
+            android:id="@+id/tv_progress_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0/100%"
+            android:textColor="@color/gray_aaaaaa" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

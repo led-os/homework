@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <yc.com.homework.base.widget.CommonToolBar
+        android:id="@+id/commonToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <yc.com.homework.base.widget.StateView
+        android:id="@+id/stateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_f0f6fa"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_f0f6fa">
+
+        <yc.com.homework.examine.widget.CommonScrollView
+            android:id="@+id/commonScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_rootView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray_f4efee" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/t7dp"
+                    android:layout_marginRight="@dimen/t7dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/t10dp">
+
+                    <TextView
+                        android:id="@+id/mTextViewTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/t9dp"
+                        android:lineSpacingExtra="@dimen/t10dp"
+                        android:text="丑小鸭"
+                        android:textColor="@color/black_333"
+                        android:textSize="21sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_grade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/mTextViewVersion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="人教版"
+                            android:textColor="@color/gray_999"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/mTextViewGrade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/t18dp"
+                            android:text="三年级上册"
+                            android:textColor="@color/gray_999999"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/mTextViewReadUnit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/t18dp"
+                            android:text="第七单元"
+                            android:textColor="@color/gray_999999"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <yc.com.homework.welfare.widget.CommonWebView
+                    android:id="@+id/commonWebView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginLeft="@dimen/t10dp"
+                    android:layout_marginRight="@dimen/t10dp" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/t10dp"
+                    android:layout_marginRight="@dimen/t10dp"
+                    android:layout_marginTop="@dimen/t10dp"
+                    android:lineSpacingExtra="@dimen/t5dp"
+                    android:textColor="@color/gray_555555"
+                    android:textSize="@dimen/t12sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </yc.com.homework.examine.widget.CommonScrollView>
+
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:lineSpacingExtra="@dimen/t3dp"
+            android:paddingBottom="@dimen/t15dp"
+            android:paddingLeft="@dimen/t15dp"
+            android:paddingRight="@dimen/t15dp"
+            android:paddingTop="@dimen/t25dp"
+            android:text="这是一篇很励志的小故事。阅读文章很有感触，最后结尾很励志。以后可以继续保持"
+            android:textColor="@color/gray_555555"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/iv_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_comment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-25dp"
+            android:src="@mipmap/composition_remark"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

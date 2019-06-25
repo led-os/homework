@@ -1,0 +1,1 @@
+include ':app',':base',':rxbus',':tools',':share',':doodle',':cropper',':guide',':video-player',':photoview'

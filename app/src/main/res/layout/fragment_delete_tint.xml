@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/exit_white_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/t15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/warm_tint"
+            android:textColor="@color/black"
+            android:textSize="@dimen/t16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t15dp"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/t2dp"
+            android:text="@string/delete_tint" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:layout_marginRight="@dimen/t15dp"
+            android:layout_marginTop="@dimen/t20dp">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:background="@drawable/gray_stroke_bg"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/t5dp"
+                android:layout_weight="1"
+                android:background="@drawable/common_cirlce_red_bg"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

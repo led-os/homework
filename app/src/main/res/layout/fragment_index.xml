@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:homework="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <yc.com.homework.base.widget.CommonToolBar
+        android:id="@+id/commonToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/t52dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--android:layout_marginLeft="@dimen/t15dp"-->
+                <!--android:layout_marginRight="@dimen/t15dp"-->
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/t5dp"
+                    android:layout_marginRight="@dimen/t5dp"
+                    android:layout_marginTop="@dimen/t15dp">
+
+                    <ImageView
+                        android:id="@+id/iv_soundmark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/t3dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/soundmark_teach_icon" />
+
+                    <ImageView
+                        android:id="@+id/iv_yuwen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/t3dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/yuwen_icon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/t5dp"
+                    android:layout_marginRight="@dimen/t5dp"
+                    android:layout_marginTop="@dimen/t15dp"
+                    android:visibility="gone"
+                    android:weightSum="4">
+
+                    <yc.com.homework.index.widget.BaseIndexView
+                        android:id="@+id/baseIndexView_answer_look"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        homework:index_icon="@mipmap/answer_look_icon"
+                        homework:index_title="@string/answer_look" />
+
+                    <yc.com.homework.index.widget.BaseIndexView
+                        android:id="@+id/baseIndexView_book_read"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        homework:index_icon="@mipmap/book_read_icon"
+                        homework:index_title="@string/book_read" />
+
+                    <yc.com.homework.index.widget.BaseIndexView
+                        android:id="@+id/baseIndexView_soundmark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        homework:index_icon="@mipmap/soundmark_teach_icon"
+                        homework:index_title="@string/soundmark_teach" />
+
+
+                    <yc.com.homework.index.widget.BaseIndexView
+                        android:id="@+id/baseIndexView_yuwen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        homework:index_icon="@mipmap/yuwen_icon"
+                        homework:index_title="@string/chinese_composition" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/t5dp"
+                    android:layout_marginRight="@dimen/t5dp"
+                    android:layout_marginTop="@dimen/t8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/t10dp"
+                        android:layout_marginRight="@dimen/t10dp"
+                        android:text="@string/teach_tool"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/t18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/t10dp">
+
+                        <yc.com.homework.index.widget.BaseIndexView
+                            android:id="@+id/baseIndexView_english"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            homework:index_icon="@mipmap/english_icon"
+                            homework:index_title="单词记忆宝典" />
+
+
+                        <yc.com.homework.index.widget.BaseIndexView
+                            android:id="@+id/baseIndexView_answer_shuxue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            homework:index_icon="@mipmap/shuxue_icon"
+                            homework:index_title="小学公式大全" />
+
+                        <yc.com.homework.index.widget.BaseIndexView
+                            android:id="@+id/baseIndexView_more"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            homework:index_icon="@mipmap/index_more_icon"
+                            homework:index_title="精彩趣味好学" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/t15dp"
+                    android:layout_marginRight="@dimen/t15dp"
+                    android:layout_marginTop="@dimen/t15dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/reading_style"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/t18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_more_news"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="?attr/selectableItemBackground"
+                            android:padding="@dimen/t5dp"
+                            android:text="更多 >"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/t12sp" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/index_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/t10dp"
+                        android:nestedScrollingEnabled="false" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

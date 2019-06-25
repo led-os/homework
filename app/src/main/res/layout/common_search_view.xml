@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/search_white_bg"
+        android:paddingBottom="@dimen/t5dp"
+        android:paddingLeft="@dimen/t10dp"
+        android:paddingRight="@dimen/t10dp"
+        android:paddingTop="@dimen/t5dp">
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/homework_white_search" />
+
+        <TextView
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t5dp"
+            android:layout_toRightOf="@id/iv_search"
+            android:text="@string/input_book_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/t16sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/scan_black"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_search"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/t10dp"
+        android:background="@drawable/search_white_bg"
+        android:gravity="center"
+        android:text="@string/seek"
+        android:textColor="@color/black"
+        android:textSize="@dimen/t16sp"
+        android:visibility="gone" />
+
+</LinearLayout>
