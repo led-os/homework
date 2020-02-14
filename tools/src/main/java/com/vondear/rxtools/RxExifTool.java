@@ -2,19 +2,18 @@ package com.vondear.rxtools;
 
 import android.location.Location;
 import android.media.ExifInterface;
-
-import com.orhanobut.logger.Logger;
+import android.util.Log;
 
 import java.io.File;
 
 /**
- *
  * @author Vondear
  * @date 2017/7/28
- *
  */
 
 public class RxExifTool {
+    private static final String TAG = "RxExifTool";
+
     /**
      * 将经纬度信息写入JPEG图片文件里
      *
@@ -38,7 +37,7 @@ public class RxExifTool {
                 }
                 exif.saveAttributes();
 
-                Logger.d(exif.getAttribute(ExifInterface.TAG_GPS_LATITUDE) + "\n"
+                Log.d(TAG, exif.getAttribute(ExifInterface.TAG_GPS_LATITUDE) + "\n"
                         + exif.getAttribute(ExifInterface.TAG_GPS_LONGITUDE) + "\n"
                         + exif.getAttribute(ExifInterface.TAG_GPS_PROCESSING_METHOD) + "\n"
                         + exif.getAttribute(ExifInterface.TAG_IMAGE_LENGTH) + "\n"
@@ -49,7 +48,7 @@ public class RxExifTool {
         }
     }
 
-    private static String gpsInfoConvert(double gpsInfo){
+    private static String gpsInfoConvert(double gpsInfo) {
         gpsInfo = Math.abs(gpsInfo);
         String dms = Location.convert(gpsInfo, Location.FORMAT_SECONDS);
         String[] splits = dms.split(":");
@@ -60,6 +59,6 @@ public class RxExifTool {
         } else {
             seconds = secnds[0];
         }
-        return  splits[0] + "/1," + splits[1] + "/1," + seconds + "/1";
+        return splits[0] + "/1," + splits[1] + "/1," + seconds + "/1";
     }
 }

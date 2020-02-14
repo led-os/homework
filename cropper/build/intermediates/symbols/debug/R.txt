@@ -8,16 +8,16 @@ int color guideline 0x7f060003
 int color red 0x7f060004
 int color surrounding_area 0x7f060005
 int color white_translucent 0x7f060006
-int dimen border_thickness 0x7f080001
-int dimen corner_length 0x7f080002
-int dimen corner_thickness 0x7f080003
-int dimen guideline_thickness 0x7f080004
-int dimen snap_radius 0x7f080005
-int dimen t2dp 0x7f080006
-int dimen target_radius 0x7f080007
-int id off 0x7f0c0001
-int id on 0x7f0c0002
-int id onTouch 0x7f0c0003
+int dimen border_thickness 0x7f070001
+int dimen corner_length 0x7f070002
+int dimen corner_thickness 0x7f070003
+int dimen guideline_thickness 0x7f070004
+int dimen snap_radius 0x7f070005
+int dimen t2dp 0x7f070006
+int dimen target_radius 0x7f070007
+int id off 0x7f0b0001
+int id on 0x7f0b0002
+int id onTouch 0x7f0b0003
 int[] styleable CropImageView { 0x7f040001, 0x7f040002, 0x7f040003, 0x7f040004 }
 int styleable CropImageView_aspectRatioX 0
 int styleable CropImageView_aspectRatioY 1

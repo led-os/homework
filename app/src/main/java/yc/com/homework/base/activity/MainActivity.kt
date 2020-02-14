@@ -16,11 +16,14 @@ import yc.com.base.BaseActivity
 import yc.com.base.BaseEngine
 import yc.com.base.BasePresenter
 import yc.com.base.BaseView
+import yc.com.blankj.utilcode.util.SPUtils
 import yc.com.homework.R
 import yc.com.homework.base.adapter.MainAdapter
+import yc.com.homework.base.config.SpConstant
 import yc.com.homework.base.user.UserInfoHelper
 import yc.com.homework.base.utils.ToastUtils
 import yc.com.homework.examine.fragment.ExitFragment
+import yc.com.homework.index.fragment.IndexDialogFragment
 import yc.com.homework.index.fragment.IndexFragment
 import yc.com.homework.mine.fragment.MineMainFragment
 import yc.com.homework.welfare.fragment.WelfareMainFragment
@@ -50,6 +53,10 @@ class MainActivity : BaseActivity<BasePresenter<BaseEngine, BaseView>>() {
         viewPager.currentItem = 0
         UserInfoHelper.setAlias(this)
 
+        if (!SPUtils.getInstance().getBoolean(SpConstant.index_dialog)) {
+            val indexDialogFragment = IndexDialogFragment()
+            indexDialogFragment.show(supportFragmentManager, "")
+        }
         initListener()
 
 
@@ -165,8 +172,6 @@ class MainActivity : BaseActivity<BasePresenter<BaseEngine, BaseView>>() {
             viewPager.currentItem = pos
         }
     }
-
-
 
 
     override fun onBackPressed() {

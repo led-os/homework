@@ -248,7 +248,7 @@ public class AVManager implements OnAVManagerListener {
 
 
     @Override
-    public void playAssetFile(String assetFilePath, final int step) {
+    public void playAssetFile(String assetFilePath,boolean isOnce, final int step) {
 
 
     }
@@ -276,7 +276,7 @@ public class AVManager implements OnAVManagerListener {
         ret = mIat.startListening(mRecognizerListener);
 
         if (ret != ErrorCode.SUCCESS) {
-            ToastUtils.showLong("听写失败,错误码：" + ret);
+//            ToastUtils.showLong("听写失败,错误码：" + ret);
         } else {
             //ToastUtils.showLong("开始");
         }
@@ -337,7 +337,7 @@ public class AVManager implements OnAVManagerListener {
     /**
      * 用HashMap存储听写结果
      */
-    private HashMap<String, String> mIatResults = new LinkedHashMap<String, String>();
+    private HashMap<String, String> mIatResults = new LinkedHashMap<>();
 
     /**
      * 听写监听器。

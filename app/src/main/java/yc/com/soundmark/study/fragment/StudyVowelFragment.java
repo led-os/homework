@@ -127,9 +127,12 @@ public class StudyVowelFragment extends BaseDialogFragment<StudyVowelPresenter> 
                                 dismiss();
                             }
                         } else {
+                            if (!UserInfoHelper.isGotoLogin(getActivity())) {
 
-                            PayFragment payFragment = new PayFragment();
-                            payFragment.show(getChildFragmentManager(), "");
+                                PayFragment payFragment = new PayFragment();
+                                payFragment.show(getChildFragmentManager(), "");
+                            }
+
 
 //                            if (unlockFragment == null)
 //                                unlockFragment = new BookReadUnlockFragment();

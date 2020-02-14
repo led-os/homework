@@ -4,6 +4,7 @@ import android.graphics.Paint;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -35,8 +36,10 @@ import yc.com.homework.base.user.UserInfo;
 import yc.com.homework.base.user.UserInfoHelper;
 import yc.com.homework.base.widget.CommonToolBar;
 import yc.com.homework.base.widget.StateView;
+import yc.com.homework.mine.fragment.PayFragment;
 import yc.com.homework.read.fragment.BookReadUnlockFragment;
 import yc.com.soundmark.base.constant.BusAction;
+import yc.com.soundmark.base.fragment.BasePayFragment;
 import yc.com.soundmark.category.contract.WeiKeDetailContract;
 import yc.com.soundmark.category.model.domain.CourseInfo;
 import yc.com.soundmark.category.presenter.WeiKeDetailPresenter;
@@ -207,7 +210,7 @@ public class WeiKeDetailActivity extends BaseActivity<WeiKeDetailPresenter> impl
 
 
     private void initWebView(final CourseInfo data) {
-
+        webView.setBackgroundColor(ContextCompat.getColor(this, android.R.color.transparent));
         final WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
@@ -376,18 +379,18 @@ public class WeiKeDetailActivity extends BaseActivity<WeiKeDetailPresenter> impl
     //显示支付弹窗
 
     private void showBuyDialog() {
-//        BasePayFragment basePayFragment = new BasePayFragment();
-//        basePayFragment.show(getSupportFragmentManager(), "");
-        if (unlockFragment == null)
-            unlockFragment = new BookReadUnlockFragment();
-
-        Bundle bundle = new Bundle();
-        bundle.putString("content", "成功分享给好友并邀请好友注册作业啦，便可以解锁所有的微课学习哦！");
-        bundle.putString("title", "分享好友，解锁微课");
-        unlockFragment.setArguments(bundle);
-
-        if (!unlockFragment.isVisible())
-            unlockFragment.show(getSupportFragmentManager(), "");
+        PayFragment basePayFragment = new PayFragment();
+        basePayFragment.show(getSupportFragmentManager(), "");
+//        if (unlockFragment == null)
+//            unlockFragment = new BookReadUnlockFragment();
+//
+//        Bundle bundle = new Bundle();
+//        bundle.putString("content", "成功分享给好友并邀请好友注册作业啦，便可以解锁所有的微课学习哦！");
+//        bundle.putString("title", "分享好友，解锁微课");
+//        unlockFragment.setArguments(bundle);
+//
+//        if (!unlockFragment.isVisible())
+//            unlockFragment.show(getSupportFragmentManager(), "");
 
     }
 

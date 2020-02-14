@@ -35,4 +35,6 @@ object SpConstant {
     //作文搜索条件
     const val composition_version = "composition_version"
 
+    const val index_dialog="INDEX_DIALOG"
+
 }
